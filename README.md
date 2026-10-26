@@ -1,5 +1,7 @@
 # ContractDesk
 
+**Created and maintained by [Hamed Minaei](https://github.com/hamed665).**
+
 **Find schema violations without copying sensitive values into reports.**
 
 A dependency-free JavaScript engineering workbench by Hamed Minaei.
