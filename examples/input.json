@@ -1,0 +1,46 @@
+{
+  "contract": {
+    "fields": {
+      "customer_id": {
+        "type": "string",
+        "required": true,
+        "unique": true
+      },
+      "orders": {
+        "type": "integer",
+        "required": true,
+        "min": 0
+      },
+      "tier": {
+        "type": "string",
+        "enum": [
+          "starter",
+          "pro"
+        ],
+        "nullable": true
+      }
+    }
+  },
+  "rows": [
+    {
+      "customer_id": "demo-01",
+      "orders": 3,
+      "tier": "pro"
+    },
+    {
+      "customer_id": "demo-02",
+      "orders": -1,
+      "tier": "starter"
+    },
+    {
+      "customer_id": "demo-01",
+      "orders": 2,
+      "tier": "enterprise"
+    },
+    {
+      "customer_id": "demo-04",
+      "orders": 0,
+      "tier": null
+    }
+  ]
+}

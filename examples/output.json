@@ -1,0 +1,72 @@
+{
+  "summary": [
+    {
+      "label": "Rows inspected",
+      "value": 4
+    },
+    {
+      "label": "Accepted",
+      "value": 1
+    },
+    {
+      "label": "Quarantined",
+      "value": 3
+    }
+  ],
+  "note": "Issue reports contain row numbers, field names and codes. Raw cell values are never included. Row numbers start at zero.",
+  "columns": [
+    "row",
+    "field",
+    "code"
+  ],
+  "rows": [
+    {
+      "row": 1,
+      "field": "orders",
+      "code": "BELOW_MIN"
+    },
+    {
+      "row": 0,
+      "field": "customer_id",
+      "code": "DUPLICATE"
+    },
+    {
+      "row": 2,
+      "field": "customer_id",
+      "code": "DUPLICATE"
+    },
+    {
+      "row": 2,
+      "field": "tier",
+      "code": "ENUM"
+    }
+  ],
+  "issues": [
+    {
+      "row": 1,
+      "field": "orders",
+      "code": "BELOW_MIN"
+    },
+    {
+      "row": 0,
+      "field": "customer_id",
+      "code": "DUPLICATE"
+    },
+    {
+      "row": 2,
+      "field": "customer_id",
+      "code": "DUPLICATE"
+    },
+    {
+      "row": 2,
+      "field": "tier",
+      "code": "ENUM"
+    }
+  ],
+  "quarantine_indices": [
+    0,
+    1,
+    2
+  ],
+  "valid_count": 1
+}
